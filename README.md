@@ -1,5 +1,3 @@
-# vertex-ai-agents
-
 **Refer YouTube Video**: https://www.youtube.com/watch?v=EDNC4UUqyCQ
 <pre>
 <b>BytesCommerce/tools/ProductInventoryTool/</b><br>
