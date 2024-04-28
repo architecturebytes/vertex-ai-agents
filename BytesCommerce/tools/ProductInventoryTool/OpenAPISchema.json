@@ -1,0 +1,61 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "Product Inventory API",
+    "description": "API to retrieve product quantity by product Id",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://us-central1-bytesproj.cloudfunctions.net"  
+    }
+  ],
+  "paths": {
+    "/ProductInventoryManager": {
+      "get": {
+        "summary": "Get available quantity of a Product Id",
+        "description": "Returns available quantity for the specified Product Id",
+		"operationId": "getProductQuantity",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "productId",
+            "description": "The identifier of the product",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product Quantity",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "productId": {
+                      "type": "string",
+                      "description": "The identifier of the product"
+                    },
+                    "quantity": {
+                      "type": "integer",
+                      "description": "The available quantity of the product"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request - Invalid query parameter or missing required parameter"
+          },
+          "404": {
+            "description": "Product not found"
+          }
+        }
+      }
+    }
+  }
+}
