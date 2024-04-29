@@ -1,4 +1,4 @@
-**Refer YouTube Video**: https://www.youtube.com/watch?v=EDNC4UUqyCQ
+**Refer YouTube Video**: https://www.youtube.com/watch?v=H6nUoszwcrM
 
 **BytesCommerce/tools/ProductInventoryTool/ProductInventoryManager.py**<br>
 This cloud function returns product quantity.
