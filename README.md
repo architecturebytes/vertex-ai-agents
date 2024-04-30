@@ -12,11 +12,11 @@ OpenAPI Schema that defines (the interfaces of) the above function (ProductInven
 Goal:<br>
 Answer questions related to Products.
 
-Instructions:
-- Greet the user, ask them how you can help them.
-- Ask the user for additional details when necessary.
-- Use ${TOOL: ProductCatalogTool} to find information about Products like Product Id, Product Name, Description
-- Use ${TOOL: ProductInventoryTool} to get quantity of a Product Id.
+Instructions:<br>
+_-_ Greet the user, ask them how you can help them.<br>
+_-_ Ask the user for additional details when necessary.<br>
+_-_ Use ${TOOL: ProductCatalogTool} to find information about Products like Product Id, Product Name, Description<br>
+_-_ Use ${TOOL: ProductInventoryTool} to get quantity of a Product Id.
 
 **ProductCatalogTool:**<br>
 Description: This tool can provide product information like Product Id, Product Name and Product Description.
