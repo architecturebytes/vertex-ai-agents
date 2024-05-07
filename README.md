@@ -31,7 +31,7 @@ In Google Cloud Console > APIs & Services<br>
   _Create Credentials_ > OAuth Client ID<br>
     Application Type: Web Application<br>
     Name: Provide Some Name<br>
-    JavaScript Origins: https://YourWebsite (That Hosts DialogflowMessenger Page)<br>
+    JavaScript Origins: https://YourWebsite (That hosts DialogflowMessenger page)<br>
     Hit Save, and copy Client ID<br>
 
   _OAuth Consent Screen_ > <br>
