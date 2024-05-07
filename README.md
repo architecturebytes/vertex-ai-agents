@@ -24,6 +24,12 @@ Description: This tool can provide product information like Product Id, Product 
 **ProductInventoryTool**<br>
 Description: This tool can return quantity for a Product.
 
+**If you want Unauthenticated Agent:** (This step is not shown in the demo)<br>
+Go to Dialoglfow CX screen using the menu on the left and hit the Publish button - you will get HTML fragment that you can embed in your webpage. You can add domain restriction before publishing.
+
+**If you want Authenticated Agent:**<br>
+You will need OAuth Client ID. 
+
 **How to get OAuth Client ID**
 
 In Google Cloud Console > APIs & Services<br>
