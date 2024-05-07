@@ -24,3 +24,22 @@ Description: This tool can provide product information like Product Id, Product 
 **ProductInventoryTool**<br>
 Description: This tool can return quantity for a Product.
 
+**How to get Open ID Client ID**
+
+In Google Cloud Console > APIs & Services<br>
+
+  _Create Credentials_ > OAuth Client ID<br>
+    Application Type: Web Application<br>
+    Name: Provide Some Name<br>
+    JavaScript Origins: https://YourWebsite (That Hosts DialogflowMessenger Page)<br>
+    Hit Save, and copy Client ID<br>
+
+  _OAuth Consent Screen_ > <br>
+    Provie App Name (this will be displayed to user), Support Email, Developer Contact Email, Domain Info (optional)  <br>
+    Save & Continue <br>
+    Publish App. 
+
+  _Library_ > <br>
+    Enable DialogFlow API (if not enabled DialogFlow Messenger may not work and return a 403 error)
+
+  Replace the OPEN_CLIENT_ID in the html fragment of dialogflow messenger integration (for Authenticated API) with the Client ID copied earlier (while creating Credentials).
