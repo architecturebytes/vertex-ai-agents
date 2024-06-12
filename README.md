@@ -3,6 +3,9 @@
 **BytesCommerce/tools/ProductInventoryTool/ProductInventoryManager.py**<br>
 This cloud function returns product quantity.
 
+NOTE: The above function uses flask library. <br>
+If the (flask) dependency is not being automatically handled in GCP, add a line with text 'flask' in requirements.txt file that exists alongside cloud function python file.
+
 **BytesCommerce/tools/ProductInventoryTool/OpenAPISchema.json**<br>
 OpenAPI Schema that defines (the interfaces of) the above function (ProductInventoryManager.py).<br>
 **_Important_**: In this schema - you must modify the function name URL, PATHS and operationId as per your implementation.
