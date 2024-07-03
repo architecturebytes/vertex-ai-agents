@@ -52,3 +52,11 @@ In Google Cloud Console > APIs & Services<br>
     Enable DialogFlow API (if not enabled DialogFlow Messenger may not work and return a 403 error)
 
   Replace the oauth-client-id="INSERT_OAUTH_CLIENT_ID" in the html fragment of dialogflow messenger integration (for Authenticated API) with the Client ID copied earlier (while creating Credentials).
+
+  **Invoke Agent via API call**
+
+In Google Cloud Console > Service Accounts > Create New Service Account<br>
+For Role choose 'Dialogflow API Client'<br>
+Create Key (JSON) & Save It.
+
+Now use this program to generate Access token
