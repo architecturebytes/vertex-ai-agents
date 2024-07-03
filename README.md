@@ -61,3 +61,8 @@ Create Key (JSON) & Save It.
 
 Now use this program to generate Access token **Utils\GetAccessToken.py**<br>
 Invoke agent: **Utils\InvokeAgent.py**
+
+Ref:<br>
+https://cloud.google.com/dialogflow/vertex/docs/quick/api<br>
+https://cloud.google.com/dialogflow/es/docs/how/region#regions<br>
+Note that there have been some changes to dialogflow endpoints over a period of time.
