@@ -59,5 +59,5 @@ In Google Cloud Console > Service Accounts > Create New Service Account<br>
 For Role choose 'Dialogflow API Client'<br>
 Create Key (JSON) & Save It.
 
-Now use this program to generate Access token **Utils\GenerateAccessToken.py**<br>
+Now use this program to generate Access token **Utils\GetAccessToken.py**<br>
 Invoke agent: **Utils\InvokeAgent.py**
