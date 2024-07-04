@@ -15,5 +15,8 @@ credentials = service_account.Credentials.from_service_account_file(
 # Refresh the credentials to get an access token
 credentials.refresh(Request())
 access_token = credentials.token
+expiry = credentials.expiry
 
 print(f'Access Token: {access_token}')
+# print(datetime.now(timezone.utc))
+print(f'Expiry: {expiry}')
