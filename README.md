@@ -10,6 +10,9 @@ If the (flask) dependency is not being automatically handled in GCP, add a line 
 OpenAPI Schema that defines (the interfaces of) the above function (ProductInventoryManager.py).<br>
 **_Important_**: In this schema - you must modify the function name URL, PATHS and operationId as per your implementation.
 
+**IMPORTANT NOTE:**<br>
+Please use OpenAPISchema.yaml instead of json version - if you face errors of the kind: "Draft 2020-12 schemas are not yet fully supported" when you paste the schema while creating the Tool in UI.
+
 **BytesAgent**
 
 Goal:<br>
