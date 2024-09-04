@@ -69,3 +69,23 @@ Ref:<br>
 https://cloud.google.com/dialogflow/vertex/docs/quick/api<br>
 https://cloud.google.com/dialogflow/es/docs/how/region#regions<br>
 Note that there have been some changes to dialogflow endpoints over a period of time.
+
+**Invoking Authenticated Google Cloud Function**<br>
+
+Remember that permissions needed for invoking 1st gen and 2nd gen Cloud Functions are different.<br>
+In Cloud shell the following command will tell you if your function is 1st Gen or 2nd Gen<br>
+$ gcloud functions list<br>
+
+For 1st Gen Functions - _Cloud Functions Invoker_ role is enough.
+For 2nd Gen Google Cloud Functions, you need _Cloud Run Invoker_ Role assinged to the caller.<br>
+In this case the caller is our Agent/DialogFlow - so we must ensure that the service role associated with Dialogflow has this role.<br>
+
+To assign this role - in Cloud Shell use command similar to this:<br>
+$ gcloud functions add-invoker-policy-binding <my-function> <br>
+  --region=<region> &lt;br&gt;
+  --member=serviceAccount:&lt;serviceAccountAssociatedWithDialogFlow&gt;<br>
+
+The serviceaccount is of the form: service-99999@gcp-sa-dialogflow.iam.gserviceaccount.com <br>
+In cloud function under Permissions tab > View Principal you will find this service name.<br>
+There maybe a better way to locate this though!
+
