@@ -77,7 +77,7 @@ In Cloud shell the following command will tell you if your function is 1st Gen o
 $ gcloud functions list<br>
 
 For 1st Gen Functions - _Cloud Functions Invoker_ role is enough.
-For 2nd Gen Google Cloud Functions, you need _Cloud Run Invoker_ Role assinged to the caller.<br>
+For 2nd Gen Google Cloud Functions, you need _**Cloud Run Invoker**_ role assinged to the caller.<br>
 In this case the caller is our Agent/DialogFlow - so we must ensure that the service role associated with Dialogflow has this role.<br>
 
 To assign this role - in Cloud Shell use command similar to this:<br>
