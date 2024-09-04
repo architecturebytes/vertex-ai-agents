@@ -86,7 +86,7 @@ $ gcloud functions add-invoker-policy-binding <my-function> <br>
   --member=serviceAccount:&lt;serviceAccountAssociatedWithDialogFlow&gt;<br>
 
 The serviceaccount is of the form: service-nnnnnnn@gcp-sa-dialogflow.iam.gserviceaccount.com <br>
-In cloud function under Permissions tab > View Principal you will find this service name.<br>
+This service name can be seen here: In cloud function under Permissions tab > View Principal you will find this service name listed.<br>
 There maybe a better way to locate this though!
 
 Read More: https://cloud.google.com/functions/docs/securing/authenticating
