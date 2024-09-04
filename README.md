@@ -76,7 +76,7 @@ Remember that permissions needed for invoking 1st gen and 2nd gen Cloud Function
 In Cloud shell the following command will tell you if your function is 1st Gen or 2nd Gen<br>
 $ gcloud functions list<br>
 
-For 1st Gen Functions - _Cloud Functions Invoker_ role is enough.
+For 1st Gen Functions - _Cloud Functions Invoker_ role is enough.<br>
 For 2nd Gen Google Cloud Functions, you need _**Cloud Run Invoker**_ role assinged to the caller.<br>
 In this case the caller is our Agent/DialogFlow - so we must ensure that the service role associated with Dialogflow has this role.<br>
 
@@ -89,3 +89,4 @@ The serviceaccount is of the form: service-99999@gcp-sa-dialogflow.iam.gservicea
 In cloud function under Permissions tab > View Principal you will find this service name.<br>
 There maybe a better way to locate this though!
 
+Read More: https://cloud.google.com/functions/docs/securing/authenticating
