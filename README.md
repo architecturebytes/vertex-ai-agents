@@ -89,4 +89,4 @@ The serviceaccount is of the form: service-nnnnnnn@gcp-sa-dialogflow.iam.gservic
 This service name can be seen here: In cloud function under Permissions tab > View Principal you will find this service name listed.<br>
 There maybe a better way to locate this though!
 
-Read More: https://cloud.google.com/functions/docs/securing/authenticating
+Read more: https://cloud.google.com/functions/docs/securing/authenticating
